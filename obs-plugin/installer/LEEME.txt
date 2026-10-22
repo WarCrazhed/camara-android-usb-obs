@@ -1,0 +1,17 @@
+OBS Cam — usar el POCO X7 Pro como cámara de OBS por USB
+
+Requisitos en la Mac: Apple Silicon (M1–M4) y OBS Studio 32.x (de obsproject.com).
+No hace falta Android Studio ni adb: el plugin trae su propio adb.
+
+Instalar
+1. Cierra OBS.
+2. Conecta el teléfono por USB (depuración USB activa) y acepta «¿Permitir depuración USB?».
+3. Clic derecho en «instalar.command» → Abrir → Abrir.
+   (Si macOS lo bloquea: Ajustes del Sistema → Privacidad y seguridad → «Abrir de todos modos»,
+    o en Terminal:  bash ~/Downloads/OBSCam-mac/instalar.command)
+4. Abre OBS → Fuentes → + → «Cámara Android (USB)» → Dispositivo: POCO X7 Pro.
+
+Contenido
+- obs-android-cam.plugin  plugin de OBS (recibe y decodifica el video; incluye adb)
+- OBSCam.apk              app del teléfono (si ya la tienes instalada, no hace falta)
+- instalar.command        copia el plugin y, si hay teléfono conectado, instala la app

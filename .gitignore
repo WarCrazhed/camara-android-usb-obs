@@ -1,0 +1,18 @@
+# macOS
+.DS_Store
+
+# Android / Gradle
+android/.gradle/
+android/build/
+android/app/build/
+android/local.properties
+android/.idea/
+android/.kotlin/
+*.iml
+*.keystore
+*.jks
+
+# Plugin OBS: compilados, paquete y dependencias que build.sh descarga (headers de libobs, SIMDe)
+obs-plugin/build/
+obs-plugin/dist/
+obs-plugin/deps/
